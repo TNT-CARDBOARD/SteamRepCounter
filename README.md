@@ -9,7 +9,7 @@ RU:
 Просто перетащите скачанный файл SteamRepCounter.crx прямо на эту страницу.
 Подтвердите установку. Готово!
 
-Последнюю версию вы можете скачать [![тут](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
+Последнюю версию вы можете скачать тут [![тут](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
 
 EN:
 Download the SteamRepCounter.crx file from the "Releases" page on GitHub.
@@ -19,4 +19,4 @@ Enable "Developer mode" in the top right corner.
 Simply drag and drop the downloaded SteamRepCounter.crx file onto this page.
 Confirm the installation. You're all set!
 
-You can download the latest version [![here](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
+You can download the latest version here [![here](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
