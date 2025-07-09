@@ -1,3 +1,12 @@
+// --- НОВАЯ ФУНКЦИЯ ---
+// Сокращает большие числа (3810 -> 3.8k)
+function formatRepNumber(num) {
+    if (num < 1000) {
+        return num;
+    }
+    return (num / 1000).toFixed(1) + 'k';
+}
+
 // --- Вспомогательная функция для отправки комментария ---
 function postRepComment(repText) {
     const textarea = document.querySelector('.commentthread_textarea');
@@ -72,7 +81,7 @@ async function updateRepCount(profileID) {
         }
     });
     
-    repTextSpan.innerHTML = `${plusRep} +rep <span class="rep-separator">\\</span> ${minusRep} -rep`;
+    repTextSpan.innerHTML = `${formatRepNumber(plusRep)} +rep <span class="rep-separator">\\</span> ${formatRepNumber(minusRep)} -rep`;
 }
 
 
