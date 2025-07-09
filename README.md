@@ -1,6 +1,7 @@
 # SteamRepCounter
 
 RU: Простое и мощное расширение для Chrome, которое точно подсчитывает репутацию в комментариях профилей Steam.
+
 EN: A simple and powerful Chrome extension that accurately calculates reputation in Steam profile comments.
 
 RU:
