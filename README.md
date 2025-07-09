@@ -1,5 +1,7 @@
 # SteamRepCounter
-Just counts +rep and -rep in comments and shows on steam profile page
+
+RU: Простое и мощное расширение для Chrome, которое точно подсчитывает репутацию в комментариях профилей Steam.
+EN: A simple and powerful Chrome extension that accurately calculates reputation in Steam profile comments.
 
 RU:
 Скачайте файл SteamRepCounter.zip со страницы "Releases" на GitHub.
@@ -20,3 +22,8 @@ Simply drag and drop the downloaded SteamRepCounter.crx file onto this page.
 Confirm the installation. You're all set!
 
 You can download the latest version here [![here](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
+
+Screenshot from someone else's profile:
+![Screenshot01](screenshots/screenshot01.png)
+Screenshot in your profile:
+![Screenshot02](screenshots/screenshot02.png)
