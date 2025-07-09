@@ -4,6 +4,8 @@ RU: Простое и мощное расширение для Chrome, кото�
 
 EN: A simple and powerful Chrome extension that accurately calculates reputation in Steam profile comments.
 
+![Screenshot01](screenshot01.png)
+
 RU:
 Скачайте файл SteamRepCounter.zip со страницы "Releases" на GitHub.
 Разархивируйте файл SteamRepCounter.crx куда вам удобно.
