@@ -1,0 +1,60 @@
+/* Главный контейнер в правой колонке */
+.custom-rep-right-col {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #c7d5e0;
+  font-family: 'Motiva Sans', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 12px;
+  margin-top: 13px;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+}
+
+.custom-rep-right-col:not(:has(.rep-buttons-container)) {
+    justify-content: center;
+}
+
+.rep-text .rep-separator {
+  color: #5a6873;
+  margin: 0 8px;
+}
+
+.rep-buttons-container {
+  display: flex;
+  gap: 8px;
+}
+
+.rep-button {
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 4px 10px;
+  min-width: 50px; 
+  transition: all 0.2s ease-in-out;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.rep-button-plus {
+  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+}
+.rep-button-plus:hover {
+  background: linear-gradient(to bottom, #b6d908 5%, #80a006 95%);
+  transform: scale(1.05);
+}
+
+.rep-button-minus {
+  background: linear-gradient(to bottom, #d44444 5%, #8f2c2c 95%);
+}
+.rep-button-minus:hover {
+  background: linear-gradient(to bottom, #e55c5c 5%, #a43a3a 95%);
+  transform: scale(1.05);
+}
