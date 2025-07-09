@@ -24,6 +24,6 @@ Confirm the installation. You're all set!
 You can download the latest version here [![here](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
 
 Screenshot from someone else's profile:
-![Screenshot01](screenshots/screenshot01.png)
+![Screenshot01](screenshot01.png)
 Screenshot in your profile:
-![Screenshot02](screenshots/screenshot02.png)
+![Screenshot02](screenshot02.png)
