@@ -13,7 +13,7 @@
 #### Установка
 Установить расширение можно в один клик с официального магазина дополнений Firefox:
 
-** [Установить с Firefox Browser ADD-ONS](https://addons.mozilla.org/firefox/addon/steam-rep-counter-tnt/ "Перейти на страницу дополнения")**
+**[Установить с Firefox Browser ADD-ONS](https://addons.mozilla.org/firefox/addon/steam-rep-counter-tnt/ "Перейти на страницу дополнения")**
 
 #### Исходный код
 Расширение имеет открытый исходный код. Вы можете ознакомиться с ним в репозитории на GitHub. Последняя версия всегда доступна на странице "Releases".
@@ -27,7 +27,7 @@
 #### Installation
 You can install the extension with a single click from the official Firefox Add-ons store:
 
-** [Install from Firefox Browser ADD-ONS](https://addons.mozilla.org/firefox/addon/steam-rep-counter-tnt/ "Go to the add-on page")**
+**[Install from Firefox Browser ADD-ONS](https://addons.mozilla.org/firefox/addon/steam-rep-counter-tnt/ "Go to the add-on page")**
 
 #### Source Code
 This extension is open-source. You can review the code in the GitHub repository. The latest version is always available on the "Releases" page.
