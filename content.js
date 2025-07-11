@@ -1,10 +1,24 @@
-// --- НОВАЯ ФУНКЦИЯ ---
-// Сокращает большие числа (3810 -> 3.8k)
 function formatRepNumber(num) {
-    if (num < 1000) {
-        return num;
+    const INT_MAX = 2147483647;
+    const UINT_MAX = 4294967295;
+    if (num >= UINT_MAX) {
+        // Если кто-то наебашил больше, он уже не человек
+        return 'REP_GOD'; 
     }
-    return (num / 1000).toFixed(1) + 'k';
+    if (num >= INT_MAX) {
+        return '>2.1e9';
+    }
+    // Стандартные сокращения для смертных
+    if (num >= 1000000000) {
+        return (num / 1000000000).toFixed(1) + 'B';
+    }
+    if (num >= 1000000) {
+        return (num / 1000000).toFixed(1) + 'M';
+    }
+    if (num >= 1000) {
+        return (num / 1000).toFixed(1) + 'k';
+    }
+    return num;
 }
 
 // --- Вспомогательная функция для отправки комментария ---
@@ -32,9 +46,10 @@ async function fetchAllComments(profileID, totalComments) {
     for (const result of results) {
         if (result && result.comments_html) allCommentsHTML += result.comments_html;
     }
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = allCommentsHTML;
-    return tempDiv.querySelectorAll('.commentthread_comment'); // Получаем весь блок комментария
+    
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(allCommentsHTML, 'text/html');
+    return doc.querySelectorAll('.commentthread_comment');
 }
 
 // --- Хуйня, обновляет цифры в блоке ---
@@ -42,7 +57,6 @@ async function updateRepCount(profileID) {
     const repTextSpan = document.querySelector('.rep-text');
     if (!repTextSpan) return;
 
-    // Получаем URL текущего профиля для сравнения
     const profileURL = window.location.href.split('?')[0].split('#')[0];
 
     const totalCountMatch = document.documentElement.innerHTML.match(/"total_count":\s*(\d+)/);
@@ -64,7 +78,6 @@ async function updateRepCount(profileID) {
         const authorLinkElement = commentBlock.querySelector('.commentthread_author_link');
         if (authorLinkElement) {
             const authorURL = authorLinkElement.href.split('?')[0].split('#')[0];
-            // Если ссылка автора совпадает со ссылкой профиля, пропускаем этот коммент
             if (authorURL.toLowerCase() === profileURL.toLowerCase()) {
                 return;
             }
@@ -81,11 +94,18 @@ async function updateRepCount(profileID) {
         }
     });
     
-    repTextSpan.innerHTML = `${formatRepNumber(plusRep)} +rep <span class="rep-separator">\\</span> ${formatRepNumber(minusRep)} -rep`;
+    // Пересобираем элемент без innerHTML, чтобы пройти валидацию.
+    repTextSpan.textContent = ''; 
+    repTextSpan.append(
+        `${formatRepNumber(plusRep)} +rep `,
+        Object.assign(document.createElement('span'), {
+            className: 'rep-separator',
+            textContent: ' \\ '
+        }),
+        ` ${formatRepNumber(minusRep)} -rep`
+    );
 }
 
-
-// --- Основная функция ---
 async function initializeRepCounter() {
     if (document.querySelector('.custom-rep-right-col')) return;
 
@@ -106,13 +126,31 @@ async function initializeRepCounter() {
     if (!profileIdMatch) return;
     const profileID = profileIdMatch[1];
     
-    const isOwnProfile = !!document.querySelector('.btn_profile_action span:contains("Редактировать профиль")');
+    // =========================================================================
+    // ИСПРАВЛЕНО: Новый, надежный способ определения своего профиля.
+    // Вместо поиска текста на кнопке, теперь сравниваються URL.
+    // =========================================================================
+    let isOwnProfile = false; 
+    const loggedInUserAvatarLink = document.querySelector('a.user_avatar.playerAvatar');
+
+    if (loggedInUserAvatarLink) {
+        // Если юзер залогинен, получаем его URL
+        const loggedInUserUrl = loggedInUserAvatarLink.href.split('?')[0].split('#')[0];
+        // Получаем URL текущей страницы
+        const currentPageUrl = window.location.href.split('?')[0].split('#')[0];
+        // Сравниваем. Если совпали - это наш профиль.
+        if (loggedInUserUrl.toLowerCase() === currentPageUrl.toLowerCase()) {
+            isOwnProfile = true;
+        }
+    }
+    // =========================================================================
 
     const repContainer = document.createElement('div');
     repContainer.className = 'custom-rep-right-col';
     const repTextSpan = document.createElement('span');
     repTextSpan.className = 'rep-text';
-    repTextSpan.innerHTML = ui.loadingText;
+    
+    repTextSpan.textContent = ui.loadingText;
     repContainer.appendChild(repTextSpan);
 
     if (!isOwnProfile) {
@@ -148,9 +186,9 @@ async function initializeRepCounter() {
 }
 
 // --- ЗАПУСК ВСЕГО СКРИПТА ---
+// Полифилл для :contains удален, так как он больше не нужен.
 (function() {
-    (function(){function contains(s,t){var e=document.querySelectorAll(s);return Array.from(e).filter(function(e){return RegExp(t,"i").test(e.textContent)})}var o=document.querySelector;document.querySelector=function(s){if(s.includes(":contains(")){var t=s.split(":contains("),e=t[0]||"*",c=t[1].slice(1,-2),n=contains(e,c);return n.length>0?n[0]:null}return o.apply(document,arguments)}})();
-    if (document.readyState === 'complete') {
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
         initializeRepCounter();
     } else {
         window.addEventListener('load', initializeRepCounter);

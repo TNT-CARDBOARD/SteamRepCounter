@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Steam Rep Counter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Just counts +rep and -rep in comments and shows on steam profile page",
   "author": "TNT CARDBOARD",
   "icons": {
