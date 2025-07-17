@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <img src="../icons/icon48.png" class="header-icon">
+            <h1 class="header-title" data-i18n="title">SteamRepCounter</h1>
+        </header>
+
+        <main class="popup-content">
+            <section class="settings-group">
+                <h2 class="group-title" data-i18n="displayOptions">Display Options</h2>
+                <div class="setting-row">
+                    <label for="highlight-comments" class="setting-label" data-i18n="highlightComments">Highlight comments</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="highlight-comments" class="toggle-input">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-row">
+                    <label for="profile-bar" class="setting-label" data-i18n="showRepBar">Show reputation bar</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="profile-bar" class="toggle-input">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-row">
+                    <label for="theme-toggle" class="setting-label" data-i18n="oldSchoolTheme">Old-School Theme</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="theme-toggle" class="toggle-input">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </section>
+            <section class="settings-group">
+                <h2 class="group-title" data-i18n="countingLogic">Counting Logic</h2>
+                <div class="setting-row">
+                    <label for="counting-mode" class="setting-label" data-i18n="countingMode">Counting mode</label>
+                    <div class="steam-select-wrapper">
+                        <select id="counting-mode">
+                            <option value="all" data-i18n="countAll">Count all comments</option>
+                            <option value="unique-user-last" data-i18n="lastFromUser">Last from user</option>
+                            <option value="unique-user-majority" data-i18n="majorityFromUser">Majority from user</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section class="settings-group">
+                <h2 class="group-title" data-i18n="language">Language</h2>
+                <div class="setting-row">
+                     <div id="language-custom-select" class="custom-select-container">
+                        <div class="custom-select-trigger">
+                            <span id="selected-language-text">English</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="settings-group">
+                <h2 class="group-title" data-i18n="keywordManagement">Keyword Management</h2>
+                <div class="setting-row">
+                    <button id="edit-keywords-btn" class="steam-button" data-i18n="editKeywords">Edit Reputation Keywords</button>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="popup-footer">
+            <button id="reset-all-settings-btn" class="steam-button-link" data-i18n="resetAllSettings">Reset All Settings</button>
+            <span id="version-display"></span>
+        </footer>
+    </div>
+
+    <div id="keywords-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2 class="modal-title" data-i18n="editKeywordsTitle">Edit Keywords</h2>
+            <div class="modal-body">
+                <div class="keyword-field">
+                    <label for="plus-keywords-textarea" data-i18n="positiveKeywords">Positive (+rep) Keywords</label>
+                    <textarea id="plus-keywords-textarea" rows="5"></textarea>
+                </div>
+                <div class="keyword-field">
+                    <label for="minus-keywords-textarea" data-i18n="negativeKeywords">Negative (-rep) Keywords</label>
+                    <textarea id="minus-keywords-textarea" rows="5"></textarea>
+                </div>
+                <a href="#" id="reset-keywords-btn" class="steam-button-link" data-i18n="resetToDefault">Reset to Default</a>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-actions-right">
+                    <button id="cancel-keywords-btn" class="steam-button secondary" data-i18n="cancel">Cancel</button>
+                    <button id="save-keywords-btn" class="steam-button primary" data-i18n="save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../reputation_patterns.js"></script>
+    <script src="../localization.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>

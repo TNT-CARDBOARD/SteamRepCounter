@@ -1,34 +1,38 @@
 # SteamRepCounter
 
-**RU:** Простое и мощное расширение для Chrome, которое точно подсчитывает репутацию в комментариях профилей Steam.
+**RU:** Простое и мощное расширение для Firefox, которое точно подсчитывает репутацию в комментариях профилей Steam.
 
-**EN:** A simple and powerful Chrome extension that accurately calculates reputation in Steam profile comments.
+**EN:** A simple and powerful Firefox extension that accurately calculates reputation in Steam profile comments.
 
 ![Screenshot03](screenshot03.png)
 
 ---
 
-**RU:**
-1. Скачайте файл SteamRepCounter.zip со страницы "Releases" на GitHub.
-2. Разархивируйте файл SteamRepCounter.crx куда вам удобно.
-3. Откройте браузер Chrome и перейдите на страницу chrome://extensions.
-4. Включите "Режим разработчика" в правом верхнем углу.
-5. Просто перетащите скачанный файл SteamRepCounter.crx прямо на эту страницу.
-6. Подтвердите установку. Готово!
+### RU:
 
-Последнюю версию вы можете скачать тут [![тут](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
+#### Установка
+Установить расширение можно в один клик с официального магазина дополнений Firefox:
+
+**[Установить с Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Перейти на страницу дополнения")**
+
+#### Исходный код
+Расширение имеет открытый исходный код. Вы можете ознакомиться с ним в репозитории на GitHub. Последняя версия всегда доступна на странице "Releases".
+
+[![Последняя версия](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
 
 ---
 
-**EN:**
-1. Download the SteamRepCounter.crx file from the "Releases" page on GitHub.
-2. Unzip the SteamRepCounter.crx file to a location convenient for you.
-3. Open Chrome and go to the chrome://extensions page.
-4. Enable "Developer mode" in the top right corner.
-5. Simply drag and drop the downloaded SteamRepCounter.crx file onto this page.
-6. Confirm the installation. You're all set!
+### EN:
 
-You can download the latest version here [![here](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
+#### Installation
+You can install the extension with a single click from the official Firefox Add-ons store:
+
+**[Install from Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Go to the add-on page")**
+
+#### Source Code
+This extension is open-source. You can review the code in the GitHub repository. The latest version is always available on the "Releases" page.
+
+[![Latest version](https://img.shields.io/github/v/release/TNT-CARDBOARD/SteamRepCounter)](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)
 
 ---
 
