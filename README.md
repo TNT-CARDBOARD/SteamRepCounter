@@ -46,7 +46,7 @@ Reputation results are cached for faster loading.
 6.  You're all set!
 
 ---
-| ![Screenshot01](Screenshot01.png) | ![Screenshot04](Screenshot04.png) | ![Screenshot05](screenshot05.png) |
+| ![Screenshot01](Screenshot01.png) | ![Screenshot04](Screenshot04.png) | ![Screenshot05](Screenshot05.png) |
 |:---:|:---:|:---:|
 ---
 ![Screenshot02](Screenshot02.png)
