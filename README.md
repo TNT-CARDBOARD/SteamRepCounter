@@ -28,7 +28,7 @@
 #### Установка для FireFox
 Установить расширение можно в один клик с официального магазина дополнений Firefox:
 
-**[Установить с Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Перейти на страницу дополнения")**
+**[Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Перейти на страницу дополнения")**
 ---
 
 ### EN:
@@ -52,7 +52,7 @@ Reputation results are cached for faster loading.
 #### Installation for FireFox
 You can install the extension with a single click from the official Firefox Add-ons store:
 
-**[Install from Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Go to the add-on page")**
+**[Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Go to the add-on page")**
 ---
 
 
