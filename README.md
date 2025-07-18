@@ -24,7 +24,11 @@
 4.  Включите **"Режим разработчика"** в правом верхнем углу.
 5.  Нажмите кнопку **"Загрузить распакованное расширение"** и выберите папку, которую вы распаковали на шаге 2.
 6.  Готово!
+---
+#### Установка для FireFox
+Установить расширение можно в один клик с официального магазина дополнений Firefox:
 
+**[Установить с Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Перейти на страницу дополнения")**
 ---
 
 ### EN:
@@ -44,8 +48,14 @@ Reputation results are cached for faster loading.
 4.  Enable **"Developer mode"** in the top right corner.
 5.  Click the **"Load unpacked"** button and select the folder you unpacked in step 2.
 6.  You're all set!
-
 ---
+#### Installation for FireFox
+You can install the extension with a single click from the official Firefox Add-ons store:
+
+**[Install from Firefox Browser ADD-ONS](https://addons.mozilla.org/ru/firefox/addon/steam-rep-counter/ "Go to the add-on page")**
+---
+
+
 | ![Screenshot01](Screenshot01.png) | ![Screenshot04](Screenshot04.png) | ![Screenshot05](Screenshot05.png) |
 |:---:|:---:|:---:|
 ---
