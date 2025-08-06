@@ -20,7 +20,7 @@
 #### Установка для Chrome
 Установить расширение можно в один клик с официального магазина дополнений Chrome:
 
-**[Firefox Browser ADD-ONS](https://chromewebstore.google.com/detail/steam-rep-counter/dfmdgdoiibdedklijkipfgegpglgdpje?hl=ru&authuser=0 "Перейти на страницу дополнения")**
+**[Chrome Web-Store](https://chromewebstore.google.com/detail/steam-rep-counter/dfmdgdoiibdedklijkipfgegpglgdpje?hl=ru&authuser=0 "Перейти на страницу дополнения")**
 ---
 #### Установка для FireFox
 Установить расширение можно в один клик с официального магазина дополнений Firefox:
