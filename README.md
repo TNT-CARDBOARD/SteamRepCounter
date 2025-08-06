@@ -17,13 +17,10 @@
 Интерфейс настроек переведён на все языки Steam.
 Результаты подсчёта кэшируются для быстрой загрузки.
 
-#### Установка (вручную)
-1.  Скачайте `Source code (zip)` со страницы **[Releases](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)**.
-2.  Распакуйте архив в удобное для вас место.
-3.  Откройте Chrome и перейдите на страницу `chrome://extensions`.
-4.  Включите **"Режим разработчика"** в правом верхнем углу.
-5.  Нажмите кнопку **"Загрузить распакованное расширение"** и выберите папку, которую вы распаковали на шаге 2.
-6.  Готово!
+#### Установка для Chrome
+Установить расширение можно в один клик с официального магазина дополнений Chrome:
+
+**[Firefox Browser ADD-ONS](https://chromewebstore.google.com/detail/steam-rep-counter/dfmdgdoiibdedklijkipfgegpglgdpje?hl=ru&authuser=0 "Перейти на страницу дополнения")**
 ---
 #### Установка для FireFox
 Установить расширение можно в один клик с официального магазина дополнений Firefox:
@@ -41,14 +38,12 @@ A reputation bar now appears when hovering over a user's avatar.
 The settings interface has been translated into all languages supported by Steam.
 Reputation results are cached for faster loading.
 
-#### Installation (manual)
-1.  Download the `Source code (zip)` from the **[Releases](https://github.com/TNT-CARDBOARD/SteamRepCounter/releases/latest)** page.
-2.  Unpack the archive to a convenient location.
-3.  Open Chrome and go to the `chrome://extensions` page.
-4.  Enable **"Developer mode"** in the top right corner.
-5.  Click the **"Load unpacked"** button and select the folder you unpacked in step 2.
-6.  You're all set!
+#### Installation for Chrome
+You can install the extension with a single click from the official Chrome Add-ons store:
+
+**[Firefox Browser ADD-ONS](https://chromewebstore.google.com/detail/steam-rep-counter/dfmdgdoiibdedklijkipfgegpglgdpje?hl=ru&authuser=0 "Go to the add-on page")**
 ---
+
 #### Installation for FireFox
 You can install the extension with a single click from the official Firefox Add-ons store:
 
